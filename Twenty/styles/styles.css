@@ -1,0 +1,234 @@
+html{
+    box-sizing: border-box;
+}
+
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #0A0F10;
+    font-family: "Inter", sans-serif;
+}
+
+h1{
+    font-size: 96px;
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+    font-weight:bold;
+}
+
+h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+    font-weight:bold;
+}
+
+h3{
+    margin: 0;
+    color: white;
+}
+
+
+h4{
+    margin: 0;
+    color: white;
+}
+
+p{
+    color: white;
+    font-size: 27px;
+}
+
+path{
+    color: red;
+}
+
+
+/*NAVBAR*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10rem;
+
+}
+
+.logo img{
+    width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li{
+    list-style: none;
+}
+  
+.nav-links a {
+    color: #E9E11E;
+    margin: 0 4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight:bold;
+}
+  
+  .nav-links a:hover {
+    color: #ff0000;
+    transition: 0.3s ease-in-out;
+}
+
+/*FIN NAVBAR*/
+
+/*INDEX*/
+.main{
+    background-image: url(../Images/twenty.jpg);
+    margin: 0;
+    padding: 16rem 0;
+    text-align: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main h4{
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+/*FIN INDEX*/
+
+/*HISTORIA*/
+
+.section{
+    text-align: center;
+    padding: 2rem;
+}
+
+.images img{
+    width: 30rem;
+    margin: 0 1rem;
+}
+
+/*FIN HISTORIA*/
+
+/*TOUR*/
+
+.tour{
+    text-align: center;
+    color: red;
+    padding: 1rem;
+}
+
+.fecha h3{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.fecha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.button {
+    font-family: Arial;
+    color: #D53734;
+    font-size: 35px;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: solid #FDE421 2px;
+    background: #11191A;
+    text-transform: uppercase;
+  }
+  .button:hover {
+    background: #FDE421;
+    transition: 0.3s ease-in-out;
+  }
+/*FIN DE TOUR*/
+
+/*NOTICIAS*/
+.noticias__title h2{
+    text-align: center;
+    padding: 2rem;
+}
+
+.noticias{
+    display: flex;
+    padding: 2rem;
+}
+
+.noticias__info{
+    padding: 2rem;
+}
+
+.noticias__info h3{
+    text-transform: uppercase;
+}
+
+/*Merch*/
+
+.merch1{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.merch1 h3{
+    font-size: 2rem;
+}
+
+
+
+/*FIN MERCH*/
+
+/*FIN NOTICIAS*/
+
+/*FOOTER*/
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    text-align: center;
+}
+
+.redes{
+    padding: 0 2rem;
+    font-size: 2rem;
+    display: flex;
+}
+
+.youtube{
+    color:red;
+    margin: 0 10px;
+}
+
+.twitter{
+    color: white;
+    margin: 0 10px;
+}
+
+.instagram{
+    color: white;
+    margin: 0 10px;
+}
+
+.spotify{
+    color: green;
+    margin: 0 10px;
+}
+/*FIN FOOTER*/

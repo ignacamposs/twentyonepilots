@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Autos Multimarcas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: white;
+            padding: 1em 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5em;
+            font-size: 1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-color: #3e3e3e;
+            color: white;
+            padding: 4em 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0.5em 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+        .hero a {
+            display: inline-block;
+            margin-top: 1em;
+            padding: 0.8em 2em;
+            background-color: #ff5733;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .hero a:hover {
+            background-color: #c70039;
+        }
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 2em 0;
+        }
+        .contact-info {
+            flex: 1;
+            margin-right: 2em;
+        }
+        .contact-info h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .map {
+            flex: 2;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Zona Autos</div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Autos Usados</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Encuentra tu auto ideal hoy.</h1>
+        <p>Ofrecemos una gran variedad de vehículos nuevos y usados para satisfacer todas tus necesidades y preferencias.</p>
+        <a href="#">Contáctanos para más información</a>
+    </section>
+    <div class="container">
+        <div class="contact-section">
+            <div class="contact-info">
+                <h2>Dirección</h2>
+                <p>Vice Alte. O'Connor 820, San Carlos de Bariloche</p>
+                <h2>Horario de Atención</h2>
+                <p>Lun-Vie: 9AM - 6PM</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.922082653962!2d-71.3193!3d-41.1354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z41wrMDgnMTcuMiJTIDcxwrAxOScwMy4wIlc!5e0!3m2!1ses!2sar!4v1641013231410!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Zona Autos Multimarcas</p>
+    </footer>
+</body>
+</html>

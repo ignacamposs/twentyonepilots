@@ -1,0 +1,91 @@
+/* Reiniciar márgenes y paddings para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico para el body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    display: flex; /* Usar flexbox para alinear los elementos */
+    justify-content: space-between; /* Distribuir espacio entre los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    background-color: #333; /* Color de fondo del navbar */
+    padding: 10px; /* Padding alrededor del navbar */
+}
+
+/* Estilos para el título de la marca */
+.brand-title {
+    font-size: 1.5em; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+}
+
+/* Estilos para los enlaces del navbar */
+.navbar-links ul {
+    display: flex; /* Usar flexbox para los enlaces */
+    list-style: none; /* Quitar los puntos de la lista */
+}
+
+/* Estilos para cada elemento de la lista */
+.navbar-links li {
+    margin-left: 20px; /* Espacio entre los elementos de la lista */
+}
+
+/* Estilos para los enlaces */
+.navbar-links a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    font-size: 1.2em; /* Tamaño de fuente */
+}
+
+/* Estilos para el botón toggle (hamburguesa) */
+.toggle-button {
+    display: none; /* Ocultar el botón en pantallas grandes */
+    flex-direction: column; /* Colocar las barras en columna */
+    cursor: pointer; /* Mostrar cursor de mano al pasar sobre el botón */
+}
+
+/* Estilos para las barras del botón toggle */
+.toggle-button .bar {
+    width: 25px; /* Ancho de las barras */
+    height: 3px; /* Alto de las barras */
+    background-color: white; /* Color de las barras */
+    margin: 4px 0; /* Espacio entre las barras */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Reorganizar navbar en columna */
+        align-items: flex-start; /* Alinear elementos a la izquierda */
+    }
+    
+    .navbar-links {
+        display: none; /* Ocultar enlaces inicialmente */
+        width: 100%; /* Ancho completo del contenedor */
+    }
+    
+    .navbar-links ul {
+        flex-direction: column; /* Colocar enlaces en columna */
+        width: 100%; /* Ancho completo del contenedor */
+    }
+    
+    .navbar-links ul li {
+        text-align: center; /* Centrar texto de los enlaces */
+        width: 100%; /* Ancho completo del contenedor */
+        margin: 10px 0; /* Espacio entre los elementos de la lista */
+    }
+    
+    .toggle-button {
+        display: flex; /* Mostrar el botón toggle en pantallas pequeñas */
+    }
+    
+    .navbar-links.active {
+        display: flex; /* Mostrar enlaces cuando se activa el toggle */
+    }
+}
