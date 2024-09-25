@@ -1,0 +1,186 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #0A0F10;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin: 1rem;
+}
+
+h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin: 1rem;
+  text-align: center;
+}
+
+h3, h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin: 1rem;
+}
+
+p {
+  margin: 1rem 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.boton__noticias {
+  padding: 1em 2em;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 1000ms;
+  position: relative;
+  overflow: hidden;
+  background-color: #11191A;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.boton__noticias:hover {
+  color: #FDE421;
+  transform: scale(1);
+  outline: 2px solid;
+  box-shadow: 4px 5px 17px -4px;
+}
+
+.boton__noticias::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ff0000;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.boton__noticias:hover::before {
+  width: 250%;
+}
+
+.navbar-personal {
+  box-sizing: border-box;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+.navbar-personal .nav-logo {
+  background-color: #0A0F10;
+}
+
+.logo-img {
+  width: 30%;
+}
+
+.link-personal {
+  color: #E9E11E;
+  margin: 0 4.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.link-personal:hover {
+  color: #ff0000;
+  transition: 0.3s ease-in-out;
+}
+
+.footer {
+  display: block;
+  text-align: center;
+  margin: 1rem 0;
+}
+.footer .redes {
+  display: flex;
+  align-items: center;
+  margin: 1rem 3rem;
+  padding: 0 6rem;
+  font-size: 2rem;
+}
+.footer .redes .youtube {
+  color: red;
+  margin: 0 10px;
+}
+.footer .redes .twitter,
+.footer .redes .instagram {
+  color: white;
+  margin: 0 10px;
+}
+.footer .redes .spotify {
+  color: green;
+  margin: 0 10px;
+}
+
+@media (min-width: 992px) {
+  .logo-img {
+    width: 10%;
+  }
+  h1 {
+    font-size: 96px;
+  }
+  p {
+    font-size: 27px;
+  }
+  .main {
+    padding: 20rem 0;
+    background-size: 100%;
+  }
+  .carousel-historia2 {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .fecha h3 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }
+  .button {
+    font-family: Arial;
+    color: #D53734;
+    font-size: 3rem;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: solid #FDE421 2px;
+    background: #11191A;
+  }
+  .button:hover {
+    background: #FDE421;
+    transition: 0.3s ease-in-out;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+  }
+  .footer .redes {
+    padding: 0 2rem;
+    font-size: 2rem;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

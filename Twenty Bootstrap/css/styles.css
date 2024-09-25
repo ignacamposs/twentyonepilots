@@ -1,0 +1,315 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #0A0F10;
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  margin: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p {
+  margin: 1rem 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+path {
+  color: red;
+}
+
+.boton__noticias {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #11191A;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.boton__noticias:hover {
+  color: #FDE421;
+  transform: scale(1);
+  outline: 2px solid;
+  box-shadow: 4px 5px 17px -4px;
+}
+
+.boton__noticias::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ff0000;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.boton__noticias:hover::before {
+  width: 250%;
+}
+
+.navbar-personal {
+  box-sizing: border-box;
+  margin: 1rem 0 0;
+  padding: 0;
+  background-color: #0A0F10;
+}
+
+.logo-img {
+  width: 30%;
+}
+
+.link-personal {
+  color: #E9E11E;
+  margin: 0 4.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.link-personal:hover {
+  color: #ff0000;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-hamburguesa,
+.icon-hamburguesa {
+  color: red !important;
+}
+
+.main {
+  background-image: url(../Images/twenty.jpg);
+  padding: 14rem 0;
+  text-align: center;
+  background-size: 60rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.main h4 {
+  margin: 1rem 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.carousel-historia {
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+.carousel-historia2 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.carousel-img {
+  width: 100%;
+}
+
+.carousel-slide {
+  margin: 0;
+}
+
+.section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.images img {
+  width: 30rem;
+  margin: 0 1rem;
+}
+
+.tour {
+  text-align: center;
+  color: red;
+  padding: 1rem;
+}
+
+.fecha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.fecha h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.button {
+  font-family: Arial;
+  color: #D53734;
+  font-size: 1rem;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  border: solid #FDE421 2px;
+  background: #11191A;
+  text-transform: uppercase;
+}
+.button:hover {
+  background: #FDE421;
+  transition: 0.3s ease-in-out;
+}
+
+.noticias__title h2 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.noticias {
+  margin: 4rem 0;
+}
+.noticias .noticias__info {
+  padding: 2rem;
+}
+.noticias .noticias__info h3 {
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.merch {
+  margin: 2rem;
+}
+.merch .card {
+  background-color: #0A0F10;
+}
+.merch h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.footer {
+  display: block;
+  text-align: center;
+  margin: 1rem 0;
+}
+.footer .redes {
+  display: flex;
+  align-items: center;
+  margin: 1rem 3rem;
+  padding: 0 6rem;
+  font-size: 2rem;
+}
+.footer .redes .youtube {
+  color: red;
+  margin: 0 10px;
+}
+.footer .redes .twitter,
+.footer .redes .instagram {
+  color: white;
+  margin: 0 10px;
+}
+.footer .redes .spotify {
+  color: green;
+  margin: 0 10px;
+}
+
+.nav-logo {
+  background-color: #0A0F10;
+  font-family: "Inter", sans-serif;
+}
+
+@media (min-width: 992px) {
+  .logo-img {
+    width: 10%;
+  }
+  h1 {
+    font-size: 96px;
+  }
+  p {
+    font-size: 27px;
+  }
+  .noticias-p {
+    text-align: center;
+  }
+  .main {
+    padding: 20rem 0;
+    background-size: 100%;
+  }
+  .carousel-historia2 {
+    width: 35%;
+  }
+  .fecha {
+    margin: 0 5rem;
+    text-align: center;
+  }
+  .fecha h3 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }
+  .fecha .button {
+    font-family: Arial;
+    color: #D53734;
+    font-size: 3rem;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: solid #FDE421 2px;
+    background: #11191A;
+    text-transform: uppercase;
+  }
+  .fecha .button:hover {
+    background: #FDE421;
+    transition: 0.3s ease-in-out;
+  }
+  .merch {
+    margin: 2rem;
+  }
+  .merch .card {
+    background-color: #0A0F10;
+  }
+  .merch h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+  }
+  .footer .redes {
+    padding: 0 2rem;
+    font-size: 2rem;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

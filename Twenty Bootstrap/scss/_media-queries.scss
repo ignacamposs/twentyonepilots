@@ -1,0 +1,57 @@
+@media (min-width: 992px) {
+    .logo-img {
+      width: 10%;
+    }
+  
+    h1 {
+      font-size: 96px;
+    }
+  
+    p {
+      font-size: 27px;
+    }
+  
+    .main {
+      padding: 20rem 0;
+      background-size: 100%;
+    }
+  
+    .carousel-historia2 {
+      width: 40%;
+      margin: 0 auto;
+    }
+  
+    .fecha h3 {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+    }
+  
+    .button {
+      font-family: Arial;
+      color: #D53734;
+      font-size: 3rem;
+      padding: 20px;
+      text-decoration: none;
+      border-radius: 20px;
+      border: solid $button-border-color 2px;
+      background: $button-bg-color;
+  
+      &:hover {
+        background: $button-border-color;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      margin: 2rem;
+  
+      .redes {
+        padding: 0 2rem;
+        font-size: 2rem;
+        display: flex;
+      }
+    }
+  }
+  

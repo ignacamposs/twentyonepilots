@@ -1,0 +1,43 @@
+@mixin button-base($padding: 1em 2em, $font-size: 15px) {
+    padding: $padding;
+    font-size: $font-size;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 1000ms;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .boton__noticias {
+    @include button-base;
+    background-color: $button-bg-color;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+  
+  .boton__noticias:hover {
+    color: $button-border-color;
+    transform: scale(1);
+    outline: 2px solid;
+    box-shadow: 4px 5px 17px -4px;
+  }
+  
+  .boton__noticias::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: $hover-color;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .boton__noticias:hover::before {
+    width: 250%;
+  }
+  
