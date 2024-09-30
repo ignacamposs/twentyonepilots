@@ -1,28 +1,52 @@
 @media (min-width: 992px) {
     .logo-img {
-      width: 10%;
+      width: 1rem;
     }
   
     h1 {
-      font-size: 96px;
+      font-size: 6rem; /*96px*/
+    }
+
+    h2{
+      font-size: 4rem;
+    }
+
+    h4{
+      font-size: 1rem;
+
     }
   
     p {
       font-size: 27px;
     }
-  
+
     .main {
-      padding: 20rem 0;
-      background-size: 100%;
+    padding: 20rem 0;
+    background-size: 100%;
+    background-image: url(../Images/twenty.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    }
+
+    .carousel-historia{
+      width: 50%;
+      margin: 0 auto;
     }
   
     .carousel-historia2 {
       width: 40%;
       margin: 0 auto;
     }
+
+    .fecha{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem 0;
+    }
   
     .fecha h3 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       text-transform: uppercase;
     }
   

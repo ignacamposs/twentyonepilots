@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    margin: 1rem;
   }
   
   *, *::before, *::after {
@@ -11,3 +12,6 @@ html {
     font-family: $font-family;
   }
   
+  img{
+    width: 100%;
+  }

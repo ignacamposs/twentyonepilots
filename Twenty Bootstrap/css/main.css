@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  margin: 1rem;
 }
 
 *, *::before, *::after {
@@ -11,16 +12,12 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-h1 {
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
-  margin: 1rem;
+img {
+  width: 100%;
 }
 
-h2 {
-  font-size: 50px;
+h1 {
+  font-size: 40px;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
@@ -28,12 +25,31 @@ h2 {
   text-align: center;
 }
 
-h3, h4 {
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin: 1rem;
+  text-align: center;
+}
+
+h3 {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
   margin: 1rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin: 1rem;
+  text-align: center;
 }
 
 p {
@@ -56,6 +72,7 @@ p {
   background-color: #11191A;
   font-weight: bold;
   letter-spacing: 5px;
+  margin-bottom: 2rem;
 }
 
 .boton__noticias:hover {
@@ -82,43 +99,27 @@ p {
   width: 250%;
 }
 
-.navbar-personal {
-  box-sizing: border-box;
-  margin: 1rem 0 0;
-  padding: 0;
-}
-.navbar-personal .nav-logo {
-  background-color: #0A0F10;
+.tour__date {
+  border-color: #ff0000;
+  border-width: 5px 0px;
+  border-style: solid none solid;
+  border-radius: 5px;
 }
 
-.logo-img {
-  width: 30%;
-}
-
-.link-personal {
-  color: #E9E11E;
-  margin: 0 4.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-}
-.link-personal:hover {
-  color: #ff0000;
-  transition: 0.3s ease-in-out;
+.fecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
   display: block;
   text-align: center;
-  margin: 1rem 0;
 }
 .footer .redes {
   display: flex;
   align-items: center;
-  margin: 1rem 3rem;
-  padding: 0 6rem;
+  padding: 0 4rem;
   font-size: 2rem;
 }
 .footer .redes .youtube {
@@ -137,10 +138,16 @@ p {
 
 @media (min-width: 992px) {
   .logo-img {
-    width: 10%;
+    width: 1rem;
   }
   h1 {
-    font-size: 96px;
+    font-size: 6rem; /*96px*/
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 1rem;
   }
   p {
     font-size: 27px;
@@ -148,13 +155,26 @@ p {
   .main {
     padding: 20rem 0;
     background-size: 100%;
+    background-image: url(../Images/twenty.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  .carousel-historia {
+    width: 50%;
+    margin: 0 auto;
   }
   .carousel-historia2 {
     width: 40%;
     margin: 0 auto;
   }
+  .fecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+  }
   .fecha h3 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
   }
   .button {
@@ -181,6 +201,33 @@ p {
     font-size: 2rem;
     display: flex;
   }
+}
+.navbar-personal {
+  box-sizing: border-box;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+.navbar-personal .nav-logo {
+  background-color: #0A0F10;
+}
+
+.logo-img {
+  width: 20%;
+  margin: 1rem 0;
+}
+
+.link-personal {
+  color: #E9E11E;
+  margin: 0 4.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.link-personal:hover {
+  color: #ff0000;
+  transition: 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,15 +8,22 @@
 
 h1 {
   @include heading-styles(40px);
-}
-
-h2 {
-  @include heading-styles(50px);
   text-align: center;
 }
 
-h3, h4 {
+h2 {
+  @include heading-styles(30px);
+  text-align: center;
+}
+
+h3 {
   @include heading-styles(20px);
+  text-align: center;
+}
+
+h4{
+  @include heading-styles(10px);
+  text-align: center;
 }
 
 p {

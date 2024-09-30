@@ -1,26 +1,28 @@
 .navbar-personal {
-  box-sizing: border-box;
-  margin: 1rem 0 0;
-  padding: 0;
-  .nav-logo{
-    background-color: $bg-color;
+    box-sizing: border-box;
+    margin: 1rem 0 0;
+    padding: 0;
+    .nav-logo{
+      background-color: $bg-color;
+    }
   }
-}
-.logo-img {
-  width: 30%;
-}
-
-.link-personal {
-  color: $highlight-color;
-  margin: 0 4.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-
-  &:hover {
-    color: $hover-color;
-    transition: 0.3s ease-in-out;
+  .logo-img {
+    width: 20%;
+    margin: 1rem 0;
   }
-}
+  
+  .link-personal {
+    color: $highlight-color;
+    margin: 0 4.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  
+    &:hover {
+      color: $hover-color;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  

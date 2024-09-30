@@ -15,6 +15,7 @@
     background-color: $button-bg-color;
     font-weight: bold;
     letter-spacing: 5px;
+    margin-bottom: 2rem;
   }
   
   .boton__noticias:hover {
@@ -40,4 +41,16 @@
   .boton__noticias:hover::before {
     width: 250%;
   }
-  
+
+.tour__date{
+  border-color: $hover-color;
+  border-width: 5px 0px ;
+  border-style: solid none solid;
+  border-radius: 5px;
+ 
+}
+.fecha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
